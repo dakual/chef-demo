@@ -120,6 +120,7 @@ sudo chef-client
 
 
 ```sh
+docker build -t chef-workstation .
 docker run -it --name chef-workstation -v ~/chef/workspace:/root chef-workstation /bin/bash
 ```
 
