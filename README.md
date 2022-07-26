@@ -1,9 +1,12 @@
 ### Instaling Chef automate and infra server
+```shell
 sudo hostnamectl set-hostname <fqdn-hostname>
 sudo sysctl -w vm.max_map_count=262144
 sudo sysctl -w vm.dirty_expire_centisecs=20000
-
+```
+```sh
 curl https://packages.chef.io/files/current/latest/chef-automate-cli/chef-automate_linux_amd64.zip | gunzip - > chef-automate && chmod +x chef-automate
+```
 
 ### Command Line Install of Chef Automate and Infra Server
 ```sh
