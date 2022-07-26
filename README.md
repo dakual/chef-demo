@@ -31,10 +31,11 @@ sudo ./chef-automate deploy config.toml
 sudo chef-automate status
 sudo cat automate-credentials.toml
 ```
-
+```sh
 sudo chef-server-ctl user-create <user-name> <name> <surname> <email> '<password>' --filename <username>.pem
 
 sudo chef-server-ctl org-create lab '<org-name>' --association_user <>user-name --filename <org-name>-validator.pem
+```
 
 ### Reset admin password
 ```sh
